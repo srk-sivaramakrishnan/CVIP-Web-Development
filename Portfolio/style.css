@@ -1,0 +1,269 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+:root {
+--primary-color: white;
+--secondary-color:yellow;
+--secondary-color-dark: #bf3900;
+--text-dark: #0d1319;
+--text-light:rgba(255, 255, 255, 0.856);
+--white:black;
+--max-width: 1200px;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    right: 0;
+    background-color: white;
+    padding: 20px 20px;
+    /* Increased vertical padding */
+    text-align: right;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    /* Increased font size */
+}
+
+.navbar a {
+    color: #333;
+    /* Text color */
+    text-decoration: none;
+    margin: 10px;
+    /* Increased margin for spacing */
+}
+
+.navbar a:hover {
+    text-decoration: none;
+    /* Remove underline on hover */
+}
+
+.hero-container {
+    display: flex;
+    gap: 100px;
+    padding: 40px;
+    transition: all 0.3s ease;
+    /* Added transition effect */
+}
+
+.left-hero {
+    
+    padding: 20px;
+    transition: all 0.3s ease;
+    /* Added transition effect */
+}
+
+.left-hero h1 {
+    font-size: 78px;
+    /* Increased font size for "Im Nirmal" */
+    margin-bottom: 20px;
+    /* Added margin bottom for spacing */
+}
+
+.right-hero img {
+    width: 700px;    
+}
+
+.overview {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #555;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowed text */
+    border-right: 2px solid #555; /* Create a typing cursor */
+    animation: typing 2s steps(30) 1s 1 normal both;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.about-container {
+    background-color: #000000;
+}
+
+.about-section {
+    color: aliceblue;
+    padding: 0px 80px;
+}
+.about-content{
+    display: flex;
+    gap: 50px;
+}
+.vertical-line {
+    width: 20px;
+    /* Width of the vertical line */
+    height: 200px;
+    /* Height of the vertical line */
+    background-color: #ffffff;
+    
+    
+}
+.horizontal-line {
+    
+    width: 600px;
+    /* Width of the vertical line */
+    height: 5px;
+    /* Height of the vertical line */
+    background-color: #ffffff;
+    
+    
+}
+
+/* Add this CSS code to your existing styles */
+
+.projects-container {
+padding: 10px 20px;
+padding-left: 400px;
+}
+.card1{
+display: flex;
+gap: 40px;
+}
+
+.card {
+width: 400px; /* Set the width for two cards in each row with spacing */
+background-color: #fff;
+box-shadow: 0 4px 6px rgba(0, 0.1, 0.5, 0.5);
+border-radius: 5px;
+overflow: hidden;
+transition: transform 0.2s ease; /* Add a small hover effect */
+}
+
+.card:hover {
+transform: translateY(-5px); /* Move the card slightly upward on hover */
+}
+
+.card img {
+width: 300px; /* Maintain image width within the card */
+height: 200px; /* Set a fixed height for the images */
+object-fit: cover; /* Preserve aspect ratio and cover the entire space */
+padding-left: 30px;
+}
+
+.card h3 {
+font-size: 18px;
+font-weight: bold;
+margin: 10px 0;
+padding-left: 10px;
+}
+
+.card p {
+font-size: 16px;
+color: #000000;
+text-overflow: ellipsis;
+padding-left: 10px;
+}
+
+.read-more-button {
+display: inline-block;
+margin: 10px 0;
+margin-left: 10px;
+padding: 5px 10px;
+background-color: #b6babf;
+color: #fff;
+text-decoration: none;
+border-radius: 5px;
+transition: background-color 0.3s ease;
+}
+
+.read-more-button:hover {
+background-color: #0056b3;
+}
+.hori-line {
+    
+    width: 600px;
+    /* Width of the vertical line */
+    height: 5px;
+    /* Height of the vertical line */
+    background-color: #000000;
+    
+    margin-left: 480px;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-me {
+    flex: 1;
+}
+footer__container {
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+gap: 2rem;
+
+}
+
+.footer__content {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.footer__details {
+font-size: 0.8rem;
+color: var(--text-light);
+margin: 2rem 0;
+display: grid;
+gap: 1rem;
+}
+
+
+.footer__form {
+display: grid;
+gap: 1rem;
+justify-content: center;
+padding-left:400px;
+
+}
+
+.footer__form :is(input, textarea) {
+padding: 1rem;
+width: 400px;
+background-color: var(--text-dark);
+outline: none;
+border: none;
+border-radius: 5px;
+
+}
+
+.footer__form textarea {
+resize: vertical;
+font-family: "Poppins", sans-serif;
+}
+
+.footer__form button {
+width: max-content;
+
+}
+.btn {
+padding: 1rem;
+font-size: 0.9rem;
+font-weight: 600;
+outline: none;
+border: none;
+border-radius: 5px;
+color: white;
+background-color:rgb(47, 55, 79);
+cursor: pointer;
+transition: 0.3s;
+
+}
+
+.btn:hover {
+background-color: var(--secondary-color-dark);
+}
+

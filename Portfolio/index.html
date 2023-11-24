@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact"><input type="button" value="Contact Me"
+                style="color: white; background-color: black; padding: 10px 20px; border: none; cursor: pointer; border-radius: 10px; font-size: 15px;"></a>
+    </div>
+    <div class="hero-container">
+        <div class="left-hero">
+            <h1>Hi ,I'm Sivaramakrishnan...</h1>
+            <p class="overview">Web Developer | UI/UX Designer | Full Stack Developer</p>
+        </div>
+        <div class="right-hero">
+            <img src="./images/hero-vector.png" alt="" style="">
+        </div>
+    </div>
+
+    <div class="about-container" id="about">
+        <br><br><br>
+        <div class="about-section">
+            <div class="about-heading" style="display: flex; gap: 50px;">
+                <h1 style="font-size: 50px;">About Me</h1>
+                <div class="hor" style="padding-top: 70px; ">
+                    <div class="horizontal-line"></div>
+                </div>
+
+            </div>
+
+            <div class="about-content">
+                <div class="vertical-line"></div>
+                <p style="text-indent: 50px; font-size: 20px;">I'm a versatile web developer with expertise in both
+                    front-end and back-end technologies. With a passion for creating seamless and visually appealing
+                    user experiences, I bring ideas to life through code. On the front-end, I craft intuitive and
+                    responsive interfaces using HTML, CSS, and JavaScript, ensuring that websites are not just
+                    functional but also engaging. On the back-end, I dive into server-side scripting, databases, and
+                    server management, ensuring robust functionality and data integrity. My dedication to staying
+                    updated with the latest web trends and technologies ensures that I deliver modern and efficient
+                    solutions. Let's collaborate and turn your web projects into something extraordinary!!!</p>
+            </div>
+            <br><br>
+        </div>
+    </div>
+    <h1 id="projects" style="text-align: center; font-size: 50px;">Projects</h1>
+    <div class="hori-line"></div>
+    <br><br><br><br>
+    <div class="projects-container">
+        <div class="card1">
+            <div class="card">
+                <img src="./images/hero-vector.png" alt="Project 1">
+                <h3>E commerce Website</h3>
+                <p>An e-commerce website is an online platform that enables businesses and individuals to buy and sell
+                    products or services over the internet. It provides users with the ability to browse, search,
+                    select, and purchase products, often offering features such as secure transactions, account
+                    management,..</p>
+                <a href="#" class="read-more-button">Read More</a>
+            </div>
+            <div class="card">
+                <img src="./images/hero.jpg.jpg" alt="Project 2" style="height: 200px; padding-left: 40px;">
+                <h3>Financial management</h3>
+                <p>A financial management website is an online platform designed to assist individuals, businesses, and
+                    organizations in managing their financial affairs effectively. It offers a range of tools, features,
+                    and resources to help users....</p>
+                <a href="#" class="read-more-button">Read More</a>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="card1">
+            <div class="card">
+                <img src="./images/hero-vector.png" alt="Project 1">
+                <h3>Document Chatbot</h3>
+                <p>A document chatbot is a specialized type of chatbot designed to assist users in working with
+                    documents, text, and written content more efficiently. It leverages artificial intelligence and
+                    natural language processing (NLP) technologies to provide a range of document-related services...
+                </p>
+                <a href="#" class="read-more-button">Read More</a>
+            </div>
+            <div class="card">
+                <img src="./images/hero.jpg.jpg" alt="Project 2">
+                <h3>Music Player</h3>
+                <p>A music player website is an online platform that allows users to listen to, discover, and manage
+                    their music collection directly from a web browser. These websites offer a wide range of features
+                    and functionalities to create an immersive and personalized music listening experience...</p>
+                <a href="#" class="read-more-button">Read More</a>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <footer class="footer" id="contact">
+        <div class="contact-me">
+            <h3 style="font-size: 60px; padding-left: 20px;">Contact Me! <br>Get in touch. . . . . . . . </h3>
+        </div>
+        <div class="section_container footer_container">
+            <div class="footer__content">
+
+
+                <form class="footer__form" style="margin-right: 50px;">
+                    <input type="text" placeholder="Your Name" style="color:white" />
+                    <input type="text" placeholder="Your Email Address" style="color:white" />
+                    <input type="text" placeholder="Your Phone Number" style="color:white" />
+                    <textarea cols="30" rows="10" placeholder="Your Message" style="color:white"></textarea>
+                    <button type="button" class="btn" onclick="myclick()">Send Message</button>
+
+                </form>
+            </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
